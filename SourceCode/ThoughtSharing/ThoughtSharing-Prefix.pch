@@ -1,0 +1,35 @@
+//
+//  ThoughtSharing.pch
+//  ThoughtSharing
+//
+//  Created by Denow on 18/Dec/15.
+//  Copyright © 2015 Rijo George. All rights reserved.
+//
+
+#ifndef ThoughtSharing_pch
+#define ThoughtSharing_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+#define DISPLAY_METHOD_NAME NSLog(@"\n\n\n[Line: %d] %s \n", __LINE__ ,__FUNCTION__)
+#define DELETE_HARD_CODED   NSLog(@"\n\n\n[Line: %d] %s \n******* DELETE_HARD_CODED ********\n\n\n", __LINE__, __FUNCTION__)
+#define RANDOM_COLOR       [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1]
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define COLOR_RGB(a, b, c) [UIColor colorWithRed:a/255.0 green:b/255.0 blue:c/255.0 alpha:1]
+
+
+#define COLOR_ORANGE [UIColor orangeColor]
+
+#define THEME_RELATED NSLog(@"\n\n\n******* THEME_RELATED ********\n\n\n")
+
+
+
+
+#endif /* ThoughtSharing_pch */
